@@ -1,3 +1,5 @@
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
 def cal_cosine_similarity(self,resume, job_description, threshold=15):
         resume_processor = ResumeProcessor()  
         resume_processor.load_skill_patterns("jz_skill_patterns.jsonl")
